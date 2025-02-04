@@ -14,14 +14,6 @@ const textVariants ={
             staggerChildren:0.1,
         },
     },
-    scrollButton:{
-        opacity:0,
-        y:10,
-        transition:{
-            duration:1.5,
-            repeat: Infinity,
-        },
-    },
 };
 
 const sliderVariants ={
@@ -29,11 +21,11 @@ const sliderVariants ={
         x: 0,
     },
     animate:{
-        x: "-220%",
+        x: "-550%",
         transition:{
             repeat: Infinity,
             repeatType: "mirror",
-            duration:20,
+            duration:15,
         },
     },
 };
@@ -57,7 +49,7 @@ const Hero = () => {
             </motion.div>
         </div>
         <motion.div className="slideingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-        Ux engineer and web developer  
+        Ux-designer/web developer  
         </motion.div>
       <div className="imageContainer">
         <img className="musse" src="/src/assets/Prof(1).png" alt="Bild På mig" />

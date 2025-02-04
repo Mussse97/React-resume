@@ -30,6 +30,7 @@
 .musse{
      height: 100%;
      width: 100%;
+     z-index: 999;
        
 }
 
@@ -50,13 +51,15 @@
     
    
 }
+.buttons button:hover{
+    color: orange;
+}
 .slideingTextContainer{
     position: absolute;
     font-size: 50vh;
-    color: white;
+    color: rgb(29, 27, 25);
     bottom: -70px;
     white-space: nowrap;
-    color: #ffffff09;
     width: 50%;
     font-weight: bold;
     z-index: 1;
