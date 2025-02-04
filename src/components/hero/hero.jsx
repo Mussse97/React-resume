@@ -44,7 +44,12 @@ const Hero = () => {
               <motion.button style={{ backgroundColor: 'transparent', border: '1px solid white' }} variants={textVariants}>
                 See my latest work
               </motion.button>
-            </Link>               
+            </Link>
+            <Link to="/about">
+              <motion.button style={{ backgroundColor: 'transparent', border: '1px solid white' }} variants={textVariants}>
+                About me
+              </motion.button>
+            </Link>                 
             </motion.div>
             </motion.div>
         </div>
