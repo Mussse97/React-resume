@@ -1,6 +1,29 @@
-* {
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgb(29, 28, 28);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+body{
+background-color: #0c0c1d;
+color: lightgray;
+
+}
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
