@@ -17,13 +17,58 @@ background-color: #0c0c1d;
 color: lightgray;
 
 }
-section{
-    height: 100vh;
-    scroll-snap-align: center;
-}
 
 a{
     text-decoration: none;
-    color: inherit;
 }
+/* global buttton style */
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid orange;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    margin-top: 50px;
+  }
+  
+  .button:hover {
+    color: black;
+    background-color: orange;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
 
+  /* Standard ljus-tema */
+.about-page.light {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  /* Mörkt tema */
+  .about-page.dark {
+    background-color: #0c0c1d;
+    color: #fff;
+  }
+  
+  
+  .theme-toggle {
+    background: #ff7f00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .theme-toggle:hover {
+    background: #e67200;
+  }
+  

@@ -57,19 +57,43 @@
 .slideingTextContainer{
     position: absolute;
     font-size: 50vh;
-    color: rgb(29, 27, 25);
+    color: rgb(56, 56, 56);
     bottom: -70px;
     white-space: nowrap;
     width: 50%;
     font-weight: bold;
     z-index: 1;
     pointer-events: none;
+    opacity: 0.2;
 }
 
 .h2Orange{
     font-size: 40px;
     color: orange;
 }
+
+.cv-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .cv-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: orange;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .cv-button:hover {
+    background-color: rgb(250, 191, 83);
+  }
 
 @media only screen and (max-width: 768px) {
     .h2Orange{

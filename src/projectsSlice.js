@@ -1,13 +1,13 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-// Async thunk för att hämta repositories
+// Async för att hämta repos från GitHub
 export const fetchProjects = createAsyncThunk("projects/fetchProjects", async () => {
   const reposResponse = await fetch("https://api.github.com/users/Mussse97/repos");
   if (!reposResponse.ok) throw new Error("Något gick fel vid hämtning!");
 
   const repos = await reposResponse.json();
 
-  // Hämta språk för varje repo
+  
   const languagesMap = {};
   await Promise.all(
     repos.map(async (repo) => {
@@ -24,16 +24,17 @@ export const fetchProjects = createAsyncThunk("projects/fetchProjects", async ()
 
   return { repos, languagesMap };
 });
-
+// här lagras state
 const projectsSlice = createSlice({
   name: "projects",
   initialState: {
-    data: [],
-    languages: {},
+    data: [], // Här lagras alla hämtade repos
+    languages: {}, // Här lagras alla språk och språkfördelningen
     status: "idle",
     error: null,
   },
   reducers: {},
+  // Extra reducers hanterar alla tre tillstånd
   extraReducers: (builder) => {
     builder
       .addCase(fetchProjects.pending, (state) => {

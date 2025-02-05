@@ -1,0 +1,79 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+  }
+  .about-page section{
+    max-width: 800px;
+  }
+  .titles{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 350px;
+  }
+  /* Anpassa section för tekniska färdigheter */
+  .skills-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    
+  }
+  /* Lista över färdigheter */
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom:10px;
+  }
+  
+  progress {
+    width: 60%;
+    height: 10px;
+    border-radius: 5px;
+  }
+  h2, h3{
+    margin-bottom: 20px;
+    color: orange
+  }
+  .skill-level {
+  margin-left: 20px;
+  
+}
+  .skill-name {
+    margin-right:20px;
+  } 
+  
+
+
+  @media (max-width: 768px) {
+    .about-page section {
+      flex-direction: column;
+      align-items: center;
+    }
+    ul {
+      width: 100%;
+    }
+  }
+  
