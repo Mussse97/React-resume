@@ -26,11 +26,12 @@ Detta projekt är en personlig portfölj byggd med **React**, **Redux**, **React
 ### Installera projektet
 1. Klona detta repo:
    git clone https://github.com/Mussse97/github-portfolio.git
-   ```
+   
 2. Gå till projektmappen:
    cd github-portfolio
-   ```
+   
 3. Installera beroenden:
+   
     npm install @reduxjs/toolkit react-redux För **Redux**
     npm install react-router för **React-router**
     npm install motion för **Framer-motion**
