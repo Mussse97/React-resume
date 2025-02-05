@@ -31,7 +31,7 @@ Detta projekt är en personlig portfölj byggd med **React**, **Redux**, **React
    cd github-portfolio
    
 3. Installera beroenden:
-   
+   ```
     npm install @reduxjs/toolkit react-redux För **Redux**
     npm install react-router för **React-router**
     npm install motion för **Framer-motion**
