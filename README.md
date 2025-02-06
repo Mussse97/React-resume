@@ -1,8 +1,9 @@
 # GitHub Portfolio
 
 ## Beskrivning
-Detta projekt är en personlig portfölj byggd med **React**, **Redux**, **React-router** och **Framer-motion** där jag visar upp mina GitHub-projekt och tekniska färdigheter. Sidan inkluderar även ljus/mörkt tema, filtrering av projekt baserat på programmeringsspråk och en interaktiv "Om mig"-sektion där jag presenterar mina kompetenser i procent.
-
+Detta projekt är en personlig portfölj byggd med **React**, **Redux**, **React-router** och **Framer-motion** där jag visar upp mina GitHub-projekt och tekniska färdigheter. Sidan inkluderar även ljus/mörkt tema, filtrering av projekt baserat på programmeringsspråk och en "Om mig"-sektion där jag presenterar mina kompetenser i procent.
+Med det så kan man också ladda ner mitt CV för extra information om min utbildning och kontaktinformation.
+**ThemeContext** från useContext
 ## Funktioner
 - **Projektvisning** – Hämtar och visar mina GitHub-repos automatiskt via GitHub API.
 - **Språkanalys** – Visar en procentuell fördelning av programmeringsspråk som används i mina projekt.
@@ -17,6 +18,7 @@ Detta projekt är en personlig portfölj byggd med **React**, **Redux**, **React
 - **React Router** – För navigering mellan sidor.
 - **GitHub API** – För att hämta projektdata.
 - **Framer-motion** – För att hantera animationer för start sidan.
+- **ThemeContext** – För att hantera Ljus/mört tema.
 - **CSS (Flexbox & Media Queries)** – För responsiv design.
 
 ## Installation och Körning
@@ -30,11 +32,11 @@ Detta projekt är en personlig portfölj byggd med **React**, **Redux**, **React
 2. Gå till projektmappen:
    cd github-portfolio
    
-3. Installera beroenden:
+3. Installera Redux, Router och Motion beroenden:
    ```
-    npm install @reduxjs/toolkit react-redux För **Redux**
-    npm install react-router för **React-router**
-    npm install motion för **Framer-motion**
+    npm install @reduxjs/toolkit react-redux 
+    npm install react-router 
+    npm install motion 
    ```
 
 ### Starta projektet
