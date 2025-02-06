@@ -3,7 +3,7 @@
 ## Beskrivning
 Detta projekt är en personlig portfölj byggd med **React**, **Redux**, **React-router** och **Framer-motion** där jag visar upp mina GitHub-projekt och tekniska färdigheter. Sidan inkluderar även ljus/mörkt tema, filtrering av projekt baserat på programmeringsspråk och en "Om mig"-sektion där jag presenterar mina kompetenser i procent.
 Med det så kan man också ladda ner mitt CV för extra information om min utbildning och kontaktinformation.
-**ThemeContext** från useContext
+**ThemeContext** från useContext gör att vi kan hantera mörkt och ljust läge globalt. Detta betyder att vi kan ändra temat från vilken komponent som helst utan att behöva skicka props.
 ## Funktioner
 - **Projektvisning** – Hämtar och visar mina GitHub-repos automatiskt via GitHub API.
 - **Språkanalys** – Visar en procentuell fördelning av programmeringsspråk som används i mina projekt.
